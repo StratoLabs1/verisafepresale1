@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSF Token Presale</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>VSF Token Presale</h1>
+        <p>Price: 1 VSF = $0.02 USDT</p>
+        <button id="connectWallet">Connect Wallet</button>
+        <form id="purchaseForm" style="display: none;">
+            <label for="amount">Amount of USDT to spend:</label>
+            <input type="number" id="amount" name="amount" required>
+            <button type="submit">Buy Tokens</button>
+        </form>
+        <button id="claimTokens" style="display: none;">Claim Tokens</button>
+        <div id="status"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
